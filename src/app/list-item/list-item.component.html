@@ -1,0 +1,6 @@
+<input type="text" #inputValue>
+<button (click)="newItem(inputValue.value)">Add</button>
+
+<ul *ngFor="let list of listData">
+    <li>{{list.content}}</li>
+</ul>
